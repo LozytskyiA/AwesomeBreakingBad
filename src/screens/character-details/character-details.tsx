@@ -36,6 +36,7 @@ export const CharacterDetails = () => {
 
             {character?.occupation.map((profession: string, index: number) => (
               <Styled.Occupation
+                key={profession}
                 color={PALETTE.gray.body}
                 size={13}
                 weight={400}
